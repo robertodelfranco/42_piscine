@@ -18,6 +18,6 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(229, 229);
+	rush(5, 5);
 	return (0);
 }
