@@ -21,7 +21,7 @@ void	rush(int x, int y)
 	int	line;
 
 	line = 1;
-	while (line <= y && x > 0)
+	while (line <= y && y <= 230 && x > 0 && x < 230)
 	{
 		colum = 1;
 		while (colum <= x)
