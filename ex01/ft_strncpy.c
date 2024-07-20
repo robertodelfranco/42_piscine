@@ -14,30 +14,18 @@
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	c;
-	unsigned int	csrc;
+    unsigned int i;
 
-	csrc = 1;
-	c = 0;
-	while (src[csrc] != 0)
-		csrc++;
-	if (csrc < n)
-	{
-		while (n >= 0)
-		{
-			dest[c] = src[c];
-			n--;
-			c++;
-		}
-		return (dest);
-	}
-	while (c < n)
-	{
-		dest[c] = src[c];
-		c++;
-	}
-	dest[c] = 0;
-	return (dest);
+    i = 0;
+    while (i < n && src[i] != '\0') {
+        dest[i] = src[i];
+        i++;
+    }
+    while (i < n) {
+        dest[i] = '\0';
+        i++;
+    }
+    return dest;
 }
 
 /*
