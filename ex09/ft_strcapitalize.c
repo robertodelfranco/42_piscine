@@ -17,22 +17,22 @@ int	is_alphanumeric(char c);
 char	*ft_strcapitalize(char *str)
 {
 	int	i;
-	int	capitalize_next;
+	int	pm;
 
 	i = 0;
-	capitalize_next = 1;
+	pm = 1;
 	while (str[i] != '\0')
 	{
 		if (is_alphanumeric(str[i]))
 		{
-			if (capitalize_next && (str[i] >= 'a' && str[i] <= 'z'))
+			if (pm && (str[i] >= 'a' && str[i] <= 'z'))
 				str[i] = str[i] - 'a' + 'A';
-			else if (!capitalize_next && (str[i] >= 'A' && str[i] <= 'Z'))
+			else if (!pm && (str[i] >= 'A' && str[i] <= 'Z'))
 				str[i] = str[i] - 'A' + 'a';
-			capitalize_next = 0;
+			pm = 0;
 		}
 		else
-			capitalize_next = 1;
+			pm = 1;
 		i++;
 	}
 	return (str);

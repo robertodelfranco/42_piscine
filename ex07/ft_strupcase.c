@@ -14,6 +14,9 @@
 
 char	*ft_strupcase(char *str)
 {
+	char	*ptr;
+
+	ptr = str;
 	while (*str != 0)
 	{
 		if (*str >= 97 && *str <= 122)
@@ -22,28 +25,15 @@ char	*ft_strupcase(char *str)
 		}
 		str++;
 	}
-	return (str);
+	return (ptr);
 }
 
 /*
 int	main(void)
 {
     char str[]= "hello, world!";
-    char str2[]= "AAA093210931lllll";
-    char str3[]= "hello, WEorld!";
-    char str4[]= "HELLLO*hhhh";
-    char str5[]= "*&%$hekllfho";
 
     ft_strupcase(str);
-    ft_strupcase(str2);
-    ft_strupcase(str3);
-    ft_strupcase(str4);
-    ft_strupcase(str5);
-	
     printf("%s\n", str);
-    printf("%s\n", str2);
-    printf("%s\n", str3);
-    printf("%s\n", str4);
-    printf("%s\n", str5);
 }
 */

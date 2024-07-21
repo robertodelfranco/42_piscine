@@ -22,7 +22,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		dest[i] = src[i];
 		i++;
 	}
-	while (i <= n)
+	while (i < n)
 	{
 		dest[i] = '\0';
 		i++;
@@ -36,9 +36,8 @@ int	main(void)
 	char src[]= "str n cpy";
 	char dest[9];
 
-	ft_strncpy(dest, src, 9);
+	ft_strncpy(dest, src, 10);
 
-	printf("src: %s\n", src);
 	printf("dest: %s\n", dest);
 	return 0;
 }

@@ -14,6 +14,9 @@
 
 char	*ft_strlowcase(char *str)
 {
+	char	*ptr;
+
+	ptr = str;
 	while (*str != '\0')
 	{
 		if (*str >= 65 && *str <= 90)
