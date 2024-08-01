@@ -6,7 +6,7 @@
 /*   By: rdel-fra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 15:31:59 by rdel-fra          #+#    #+#             */
-/*   Updated: 2024/07/24 15:32:01 by rdel-fra         ###   ########.fr       */
+/*   Updated: 2024/07/31 21:16:04 by rdel-fra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-/*
+
 int	main(void)
 {
 	ft_putnbr(-42);
@@ -56,4 +56,4 @@ int	main(void)
 	printf("\n");
 	ft_putnbr(0);
 }
-*/
+

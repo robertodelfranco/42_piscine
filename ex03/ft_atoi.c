@@ -6,7 +6,7 @@
 /*   By: rdel-fra <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 15:33:18 by rdel-fra          #+#    #+#             */
-/*   Updated: 2024/07/24 15:33:21 by rdel-fra         ###   ########.fr       */
+/*   Updated: 2024/07/31 17:41:55 by rdel-fra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,12 @@ int	ft_atoi(char *str)
 	return (num);
 }
 
-/*
+
 int main()
 {
-	char str[]= "   +-1234 97";
+	char str[]= " ---++h  +-1234 97";
 
 	ft_atoi(str);
 	printf("%d", ft_atoi(str));
 }
-*/
+
