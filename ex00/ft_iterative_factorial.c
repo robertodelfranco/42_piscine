@@ -6,7 +6,7 @@
 /*   By: rdel-fra <rdel-fra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 12:46:43 by rdel-fra          #+#    #+#             */
-/*   Updated: 2024/07/30 17:16:17 by rdel-fra         ###   ########.fr       */
+/*   Updated: 2024/07/31 18:31:00 by rdel-fra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 int	ft_iterative_factorial(int nb)
 {
 	int	i;
+	int	result;
 
-	i = nb - 1;
-	if (i < 0)
+	if (nb < 0)
 		return (0);
-	if (i == 0)
-		return (1);
-	while (i > 0)
+	i = 2;
+	result = 1;
+	while (i <= nb)
 	{
-		nb += nb * (i - 1);
-		i--;
+		result *= i;
+		i++;
 	}
-	return (nb);
+	return (result);
 }
 
-// int	main(void)
-// {
-// 	printf("%d", ft_iterative_factorial(5));
-// }
+int	main(void)
+{
+	printf("%d", ft_iterative_factorial(1));
+}
