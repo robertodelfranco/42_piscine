@@ -6,7 +6,7 @@
 /*   By: rdel-fra <rdel-fra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 12:46:43 by rdel-fra          #+#    #+#             */
-/*   Updated: 2024/07/31 18:31:00 by rdel-fra         ###   ########.fr       */
+/*   Updated: 2024/08/01 13:51:05 by rdel-fra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_iterative_factorial(int nb)
 	return (result);
 }
 
-int	main(void)
-{
-	printf("%d", ft_iterative_factorial(1));
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_iterative_factorial(1));
+// }
