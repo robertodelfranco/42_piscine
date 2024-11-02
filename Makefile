@@ -4,12 +4,12 @@ SRCS = main.c functions.c numbers.c read.c
 
 OBJS = ${SRC:.c=.o}
 
-FLAGS = -Wall -Werror -Wextra -g
+FLAGS = -Wall -Werror -Wextra
 
 all:	${NAME}
 
 ${NAME}: ${OBJS}
-	cc -o ${NAME} ${SRCS} -Iincludes ${FLAGS}
+	gcc -o ${NAME} ${SRCS} -Iincludes ${FLAGS}
 
 clean:
 	rm -f ${OBJS}

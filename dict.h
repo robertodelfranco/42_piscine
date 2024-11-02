@@ -10,10 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DICT_H_H
-# define DICT_H_H
+#ifndef DICT_H
+# define DICT_H
 
-# define __BUFF 8
+# include <stdio.h>
+# include <stdlib.h>
+# include <fcntl.h>
+# include <unistd.h>
+# include <errno.h>
 
 typedef struct s_list
 {

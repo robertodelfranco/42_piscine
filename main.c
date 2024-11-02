@@ -10,12 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "dict_h.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <errno.h>
+#include "dict.h"
 
 int	test_num(char *num)
 {
@@ -84,7 +79,7 @@ void	ft_print(long long n, t_list *tab, long long *first)
 		ft_print(n / mult, tab, first);
 	if (*first == 0)
 		write(1, " ", 1);
-	first = 0;
+	*first = 0;
 	while (i < 41 && tab[i].nb != mult)
 		i++;
 	if (i < 41)
